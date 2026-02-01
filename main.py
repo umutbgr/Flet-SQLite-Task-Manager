@@ -4,8 +4,8 @@ from arayuz import UygulamaArayuzu
 
 def main(page: ft.Page):
     page.title = "To-Do Uygulaması"
-    page.window_width = 450 # Pencere genişliği
-    page.window_height = 600 # Pencere yüksekliği
+    page.window_width = 450 
+    page.window_height = 600 
 
     db.veritabani()
 
@@ -47,10 +47,10 @@ def main(page: ft.Page):
     def gorevi_sil(e):
         gorev_id = e.control.data
 
-        db.gorevi_sil(gorev_id)# Görevi veritabanından sil
-        gorevleri_arayuzunde_goster()# Arayüzü güncelle
+        db.gorevi_sil(gorev_id)
+        gorevleri_arayuzunde_goster()
         
-    arayuz.ekle_butonu.on_click = ekle_butonu_tiklandi# Ekle butonuna tıklandığında
+    arayuz.ekle_butonu.on_click = ekle_butonu_tiklandi
     arayuz.yeni_gorev_alani.on_submit = ekle_butonu_tiklandi# Enter ile ekle
 
     page.add(arayuz.ana_kisim)
