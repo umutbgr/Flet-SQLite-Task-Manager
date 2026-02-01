@@ -27,13 +27,12 @@ oluşturmayı hedefler.
 
 ---
 
-## 📂 Proje Dosya Yapısı
+## ⚙️ Kurulum ve Çalıştırma
 
-```text
-Flet-SQLite-Task-Manager/
-│
-├── main.py        # Uygulama giriş noktası
-├── arayuz.py     # Flet arayüz bileşenleri
-├── veri.py       # SQLite veritabanı işlemleri
-├── .gitignore
-└── README.md
+Projeyi çalıştırmadan önce Flet kütüphanesinin bilgisayarınızda yüklü olduğundan emin olun:
+
+- pip install flet
+
+Ardından ana dosyayı çalıştırarak uygulamayı başlatabilirsiniz:
+
+- python main.py
